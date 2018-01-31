@@ -46,23 +46,11 @@ class Main_Window(QWidget):
             self.Awindow.close()
             self.Ewindow.show()
 
-    # self.show()
-
-    #
-
-    # self.window = QWidget.QMainWindow()
-    # self.encryption1 = Encryption_Window()
-    # self.encryption1.show()
-
     def AddNewKey(self, enabled):
         if enabled:
             self.Ewindow.close()
             self.Dwindow.close()
             self.Awindow.show()
-
-    #      self.encryption1 = AddNewKey_Window()
-
-    #     self.window.show()
 
     def DeleteKey(self, enabled):
         if enabled:
@@ -71,15 +59,8 @@ class Main_Window(QWidget):
             self.Dwindow.show()
 
 
-#        self.encryption1 = DeleteKey_Window()
-#  self.window.show()
-
-
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     screen = Main_Window()
-    # screen.mainwindow()
     screen.show()
     sys.exit(app.exec_())
-
-# run()
